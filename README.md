@@ -75,5 +75,3 @@ TODO
 - build.sh将使用默认方法编译（一般需要手动修改编译错误），comp.sh不删除build目录直接编译
 - 在tnnserving_client中有auto-run.sh会不断运行image_client.py以确定是否有内存泄漏的情况
 - 在运行后在http://localhost:8002/metrics 可以查看其他指标（尚未测试过）
-
-https://github.com/kubeflow/kfserving/blob/master/docs/predict-api/v2/required_api.md
