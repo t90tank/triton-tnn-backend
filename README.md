@@ -1,6 +1,6 @@
 # 简介
 
-本项目为基于triton-inference-server（https://github.com/triton-inference-server）开发的tnn-backend例子，阅读https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html 以了解更多关于triton-inference-server的内容以及backend的概念。阅读https://github.com/Tencent/TNN 以了解更多关于TNN。本项目暂时只支持使用CPU运行服务。
+本项目为基于triton-inference-server（ https://github.com/triton-inference-server ） 开发的tnn-backend例子，阅读https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html 以了解更多关于triton-inference-server的内容以及backend的概念。阅读https://github.com/Tencent/TNN 以了解更多关于TNN。本项目暂时只支持使用CPU运行服务。
 
 triton-inference-server版本:20.09
 TNN版本，见src/tnn/version.h
@@ -38,7 +38,7 @@ python3 image_client.py pics/dog.png
 由于只支持CPU的triton-inference-server backend源码编译上存在问题，建议使用smartbuild.sh，该脚本会自动将能编译通过的backend_common.cc复制到cmake拉取的文件夹中以修正编译错误。
 
 ```
-smartbuild.sh
+./smartbuild.sh
 ```
 编译结果为build/install/backends/tnn/libtriton_tnn.so
 目前smartbuild.sh会默认将新生成的so复制到./my_libs下覆盖原本的库
