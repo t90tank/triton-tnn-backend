@@ -1,6 +1,6 @@
 # 简介
 
-本项目为基于triton-inference-server（https://github.com/triton-inference-server）开发的tnn-backend例子，阅读https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html 以了解更多关于triton-inference-server的内容以及backend的概念。阅读https://github.com/Tencent/TNN 以了解更多关于NN。本项目暂时支持使用CPU运行服务。
+本项目为基于triton-inference-server（https://github.com/triton-inference-server）开发的tnn-backend例子，阅读https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html 以了解更多关于triton-inference-server的内容以及backend的概念。阅读https://github.com/Tencent/TNN 以了解更多关于TNN。本项目暂时只支持使用CPU运行服务。
 
 triton-inference-server版本:20.09
 TNN版本，见src/tnn/version.h
@@ -18,7 +18,6 @@ docker pull nvcr.io/nvidia/tritonserver:20.09-py3
 ```
 docker run -p8000:8000 -p8001:8001 -p8002:8002 -it -v $(pwd)/my_models:/models -v $(pwd)/my_libs:/opt/tritonserver/backends/tnn nvcr.io/nvidia/tritonserver:20.09-py3 tritonserver --model-store=/models
 ```
-目前多模型有些不稳定，可能要多跑几次
 
 ### python客户端（未完善功能）：
 
